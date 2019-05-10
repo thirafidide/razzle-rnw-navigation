@@ -21,8 +21,8 @@ server
     );
 
     // register the app
-    AppRegistry.registerComponent('App', () => (
-      <AppNavigator navigation={navigation} />
+    AppRegistry.registerComponent('App', () => props => (
+      <AppNavigator navigation={navigation} {...props} />
     ));
 
     // prerender the app
